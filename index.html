@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a3dce2af8c.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/progress.css">
+    <title>Custom Video Player</title>
+</head>
+
+<body>
+
+    <h1>Custom Video Player - Live Performance Video</h1>
+
+    <video src="./assets/videos/Retro Bazaar - Deep Dark Depths of Death .mp4" id="video" class="screen"
+        poster="./assets/img/poster.png"></video>
+
+    <!-- Custom Controls Panel -->
+    <div class="controls">
+        <button class="btn" id="play">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+
+        <button class="btn" id="stop">
+            <i class="fa fa-stop fa-2x"></i>
+        </button>
+
+        <!-- min: starts from begining
+             max: full widths of progress bar
+             step: second incrementer
+             value: start from beginning -->
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+        <!-- Timestamp -->
+        <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
